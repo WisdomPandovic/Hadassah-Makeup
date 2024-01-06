@@ -35,7 +35,7 @@ Hadassah Makeup and Hairstyling App is designed to provide information about Had
 
 ## Screenshots
 ![Screenshot 1](./screenshots/hadassah-gallery.png)
-![Screenshot 2](./screenshots/hadassah-gallery-2.png)
+![Screenshot 2](./screenshots/hadassah-gallery-2.PNG)
 
 ## Technologies Used
 - HTML

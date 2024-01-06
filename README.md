@@ -2,6 +2,9 @@
 
 Welcome to the Hadassah Makeup and Hairstyling App! This application showcases the makeup and hairstyling services offered by Hadassah, a skilled and experienced makeup artist.
 
+## Demo
+Check out the live demo [here](https://hadassah-makeup.vercel.app/).
+
 ## Table of Contents
 - [About](#about)
 - [Features](#features)
@@ -31,7 +34,7 @@ Hadassah Makeup and Hairstyling App is designed to provide information about Had
 3. Use the "Book Now" button to access the booking modal.
 
 ## Screenshots
-![Screenshot 1](./screenshots/screenshot1.png)
+![Screenshot 1](./screenshots/hadassah-gallery.png)
 ![Screenshot 2](./screenshots/screenshot2.png)
 
 ## Technologies Used

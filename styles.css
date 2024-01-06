@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bk-color{
+background-color: #BDD7CA;
+padding: 50px 0px;
+}
+
+.intro-text h2{
+   font-size: 3.2em;
+   line-height: 1.2;
+   color: #fff;
+}
+
+.intro-text p{
+    padding: 20px 0;
+    color: #fff;
+ }
+
+ .custom-btn {
+    margin-top: 20px; 
+    background-color: #78CDAD;
+    border: 2px solid white;
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.bk-color-2, .bk-color-4{
+    background-color: #F9F9F9;
+    color: black;
+    padding: 50px 0px;
+}
+
+.bk-color-2 img{
+   width: 100%;
+   height: 600px;
+}
+
+.intro-text-2 h2{
+    font-size: 2em;
+    line-height: 1.2;
+    color: #000;
+ }
+ 
+ .intro-text-2 p{
+     color: #000;
+  }
+ 
+  .custom-h3 {
+    border-bottom: 4px solid #78CDAD;
+    display: inline-block;
+  }
+
+  .bk-color-3{
+    /* background-color: #67686A; */
+    color: #fff;
+    padding: 50px 0px;
+    background-color: #C9A8AA;
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover; 
+  }
+
+  .service-container {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-container {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: #C6C1BE;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-group input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #C6C1BE;
+    border-bottom: 1px solid black;
+  }
+
+  .form-group textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #C6C1BE;
+    border-bottom: 1px solid black;
+  }
+
+  .contact-icons {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px; 
+  }
+
+  .contact-icons .social-icon {
+    color: #78CDAD; 
+    font-size: 24px;
+  }
+  
+  .contact-img {
+    height: 300px; 
+    object-fit: cover; 
+    border: none;
+  }
+
+  .card{
+    border: 1px solid #C6C1BE !important;
+  }
+
+  footer a{
+    color: #fff;
+  }
+
+  .copyright {
+    text-align: center;
+    color: #fff;
+    background-color: #090908;
+}
+
+.copyright h2{
+    font-size: 13px;
+    padding: 10px 0px;
+}
+
+  @media (max-width: 500px) {
+    .bk-color-4 .text-center {
+        text-align: left!important;
+    }
+    
+}

@@ -1,0 +1,546 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadassah Makeup</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1>Hadassah</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                </div>
+
+                <div class="social-icons d-lg-none">
+                    <a href="https://linkedin.com/in/wisdom-okezie-onwuchekwa" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/WisdomOkezie_" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="social-icons d-none d-lg-flex">
+                <a href="https://linkedin.com/in/wisdom-okezie-onwuchekwa" target="_blank" class="social-icon ml-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" class="social-icon ml-2"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/WisdomOkezie_" target="_blank" class="social-icon ml-2"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bk-color" id="home">
+        <div class="container mt-5 ">
+            <div class="row">
+              <div class="col-md-6 ">
+                <div class=" intro-text">
+                  <h2>Hadassah's Makeup and Hairstyles</h2>
+                  <p>Indulge in the world of beauty and style with Hadassah's Makeup and Hairstyles. We are your dedicated partners in enhancing your natural beauty, creating stunning looks, and making every moment special.</p>
+                  <button class="btn custom-btn mb-3" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+                </div>
+              </div>
+          
+              <div class="col-md-6 ">
+                <img src="./images/makeup-face.jpg" class="img-fluid" alt="Your Image">
+              </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookingModalLabel">Book Now</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Booking Form -->
+            <form id="bookingForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="serviceType">Service Type</label>
+                <select class="form-control" id="serviceType" name="serviceType" required>
+                  <option value="hair">Hair Makeup</option>
+                  <option value="face">Face Makeup</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="location">Service Location</label>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="homeService" name="location" value="home" required>
+                  <label class="form-check-label" for="homeService">Home Service</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="salonService" name="location" value="salon" required>
+                  <label class="form-check-label" for="salonService">Salon Service</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="eventDate">Event Date</label>
+                <input type="date" class="form-control" id="eventDate" name="eventDate" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Additional Details</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" onclick="submitBookingForm()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <section class="bk-color-2" id="about">
+        <div class="container mt-5 ">
+            <div class="row">
+              
+                <div class="col-md-6 ">
+                    <img src="./images/makeup-artist.jpg" class="img-fluid" alt="Your Image">
+                </div>
+
+                <div class="col-md-6 ">
+                <div class=" intro-text-2">
+                  <p class="custom-h3 mt-3">About</p>
+                  <h2>Hadassah Make-Up Artist</h2>
+                  <p>Welcome to Hadassah Make-Up Artist, where beauty meets creativity! With a passion for enhancing natural beauty and creating stunning looks, we strive to make every client feel confident and glamorous.</p>
+                  <p>Our team of skilled and experienced makeup artists is dedicated to providing personalized and high-quality services. Whether it's a bridal makeover, special event, or a photoshoot, we are here to make you look and feel your best.</p>
+                  <p>At Hadassah Make-Up Artist, we believe in the power of makeup to transform and boost self-confidence. Let us bring out your unique beauty and create a makeup look that reflects your personality and style.</p>
+                  <button class="btn custom-btn mb-3" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+                </div>
+              </div>
+          
+      
+              
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="bk-color-3">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="text-center">
+                <i class="fas fa-smile fa-3x mb-3"></i>
+                <h4>Photography</h4>
+                <p>Luxirious high quality camerals for flawless result.</p>
+              </div>
+            </div>
+      
+            <div class="col-md-3">
+              <div class="text-center">
+                <i class="fas fa-paint-brush fa-3x mb-3"></i>
+                <h4>Crafted Perfection</h4>
+                <p>Merticulously processed brushes and tools for precision application.</p>
+              </div>
+            </div>
+      
+            <div class="col-md-3">
+              <div class="text-center">
+                <i class="fas fa-palette fa-3x mb-3"></i>
+                <h4>Superior Materials</h4>
+                <p>Finest quality ingredients and material for long lasting beauty.</p>
+              </div>
+            </div>
+      
+            <div class="col-md-3">
+              <div class="text-center">
+                <i class="fas fa-wind fa-3x mb-3"></i>
+                <h4>Impeccable Execution</h4>
+                <p>Expectly executed techniques with attention to detail.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="bk-color-4" id="services">
+        <div class="container mt-5">
+          <div class="col-md-12 text-center mb-4">
+            <p class="custom-h3 mt-3">Our Services</p>
+            <h2>Beautiful Makeup for every Occassion</h2>
+          </div>
+            <div class="row service-container">
+            
+      
+            <div class="col-md-6 mb-4">
+              <div class="text-service">
+                <h3>Bridal Makeup</h3>
+                <p>Create a stunning bridal look that enhances your natural beauty, ensuring you feel comfortable, confident, and radiant on your special day. At Hadassah, we understand the importance of this momentous occasion, and our goal is to make you look and feel absolutely beautiful as you embark on this new chapter of your life.</p>
+                <button class="btn custom-btn mb-3" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+              </div>
+            </div>
+      
+            <div class="col-md-6 mb-4">
+              <div class="text-center">
+                <img src="./images/bridal-makeup.jpg" class="img-fluid" alt="Service Image">
+              </div>
+            </div>
+            </div>
+
+            <div class="row service-container">
+            
+            <div class="col-md-6 mb-4">
+              <div class="text-service">
+                <h3>Event Makeup</h3>
+                <p>Step into the spotlight and make a statement with Hadassah's expert event makeup services. Whether you're attending a glamorous party, a corporate event, or any special occasion, our skilled makeup artists are here to enhance your beauty and create a look that reflects your style and personality.</p>
+                <button class="btn custom-btn mb-3" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+              </div>
+            </div>
+      
+            <div class="col-md-6 mb-4">
+              <div class="text-center">
+                <img src="./images/ma.jpg" class="img-fluid" alt="Service Image">
+              </div>
+            </div>
+            </div>
+
+            <div class="row service-container">
+            
+                <div class="col-md-6 mb-4">
+                  <div class="text-service">
+                    <h3>Special Occassion hair styling</h3>
+                    <p>Transform your look and make every moment memorable with Hadassah's special occasion hair styling services. Whether you're attending a wedding, a gala, or any significant celebration, our expert hairstylists are dedicated to creating stunning and elegant hairstyles that perfectly complement the occasion.</p>
+                    <button class="btn custom-btn mb-3" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+                  </div>
+                </div>
+          
+                <div class="col-md-6 mb-4">
+                  <div class="text-center">
+                    <img src="./images/hair-makeup.jpg" class="img-fluid" alt="Service Image">
+                  </div>
+                </div>
+            </div>
+
+            <div class="row service-container">
+            
+                <div class="col-md-6 mb-4">
+                  <div class="text-service">
+                    <h3>Evening Glam Makeup</h3>
+                    <p>At Hadassah, we specialize in creating captivating and striking evening glam makeup looks that enhance your features and complement your outfit. From sultry smoky eyes to luscious lips, our team is committed to delivering a makeup experience that exudes confidence and sophistication.</p>
+                    <button class="btn custom-btn mb-3" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+                  </div>
+                </div>
+          
+                <div class="col-md-6 mb-4">
+                  <div class="text-center">
+                    <img src="./images/evening-glam.jpg" class="img-fluid" alt="Service Image">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <section class="bk-color-4" id="gallery">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12 text-center mb-4">
+                  <p class="custom-h3 mt-3">Portfolio</p>
+                  <h2>Gallery of recent works</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 gallery-item">
+                    <img src="./images/hadassah-makeup-gallerry-2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/>
+                    <img src="./images/hadassah-makeup-gallerry-5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
+                    <img src="./images/hadassah-makeup-gallerry-7.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
+                    <img src="./images/hadassah-makeup-gallerry-11.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
+                </div>
+  
+                <div class="col-lg-4 mb-4 mb-lg-0 gallery-item">
+                    <img src="./images/hadassah-makeup-gallerry-1.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds"/>
+                    <img src="./images/hadassah-makeup-gallerry-4.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/>
+                </div>
+  
+                <div class="col-lg-4 mb-4 mb-lg-0 gallery-item">
+                    <img src="./images/hadassah-makeup-gallerry-3.jpg" class="w-100 shadow-1-strong rounded mb-4"alt="Waves at Sea"/>
+                    <img src="./images/hadassah-makeup-gallerry-6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park"/>
+                    <img src="./images/hadassah-makeup-gallerry-9.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park"/>
+                    <img src="./images/hadassah-makeup-gallerry-10.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+      <section class="bk-" id="testimonial">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12 text-center mb-4">
+                  <p class="custom-h3 mt-3">Testimonials</p>
+                  <h2>What our clients say</h2>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <div class="container mt-5">
+        <div id="cardSlider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Card 1-3 -->
+            <div class="carousel-item active">
+              <div class="d-md-flex">
+                <!-- Card 1 -->
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card">
+                    <img src="./images/clients-1.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Malta Allan</h5>
+                      <p class="card-text">Absolutely blown away by the talent and professionalism! Hadassah's Makeup and Hairstyles app made me feel like a star on my special day. The stylist captured my vision perfectly, and the end result was beyond my expectations. Highly recommend this app for anyone wanting a flawless look!</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Card 2 -->
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card">
+                    <img src="./images/clients-2.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Catiana Jackson</h5>
+                      <p class="card-text">As someone who's picky about their makeup, I was hesitant to try a new app. But Hadassah's app exceeded my expectations! The artist paid attention to my preferences and created a look that suited my style. It's now my go-to app for any beauty service I need.</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Card 3 -->
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card">
+                    <img src="./images/clients-3.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Lucia Santiago</h5>
+                      <p class="card-text">Hadassah's Makeup and Hairstyles app is a game-changer! I needed a last-minute glam session for a photo shoot, and this app connected me with an incredible makeup artist. The convenience and quality of service were unmatched. Will definitely be using it for all my future beauty needs.</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- For mobile view -->
+                <div class="col-12 d-md-none">
+                  <div class="card">
+                    <img src="./images/clients-1.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Malta Allan</h5>
+                      <p class="card-text">Absolutely blown away by the talent and professionalism! Hadassah's Makeup and Hairstyles app made me feel like a star on my special day. The stylist captured my vision perfectly, and the end result was beyond my expectations. Highly recommend this app for anyone wanting a flawless look!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 4-6 -->
+            <div class="carousel-item">
+              <div class="d-md-flex">
+                <!-- Card 4 -->
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card">
+                    <img src="./images/clients-4.jpg" class="card-img-top" alt="Image 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Chioma Kenneth</h5>
+                      <p class="card-text">Hadassah's Makeup and Hairstyles app saved my day! I had a wedding to attend and was in a time crunch. The app connected me with a talented hairstylist who worked magic on my hair. The convenience and skill level were top-notch. I felt beautiful and received so many compliments!</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Card 5 -->
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card">
+                    <img src="./images/clients-5.jpg" class="card-img-top" alt="Image 5">
+                    <div class="card-body">
+                      <h5 class="card-title">Emily Scholes</h5>
+                      <p class="card-text">I'm not someone who usually writes reviews, but after using Hadassah's Makeup and Hairstyles app, I had to share my experience. The app is user-friendly, and the makeup artist I booked was incredibly skilled. It's a must-try for anyone looking for a reliable beauty service.</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Card 6 -->
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card">
+                    <img src="./images/clients-6.jpg" class="card-img-top" alt="Image 6">
+                    <div class="card-body">
+                      <h5 class="card-title">Matilda Rodrigo</h5>
+                      <p class="card-text">Hadassah's Makeup and Hairstyles app made my wedding day stress-free. The makeup artist and hairstylist were punctual, professional, and incredibly talented. They made me feel at ease, and the results were breathtaking. I couldn't have asked for a better experience. Thank you!</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- For mobile view -->
+                <div class="col-12 d-md-none">
+                  <div class="card">
+                    <img src="./images/clients-4.jpg" class="card-img-top" alt="Image 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Chioma Kenneth</h5>
+                      <p class="card-text">Hadassah's Makeup and Hairstyles app saved my day! I had a wedding to attend and was in a time crunch. The app connected me with a talented hairstylist who worked magic on my hair. The convenience and skill level were top-notch. I felt beautiful and received so many compliments!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#cardSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#cardSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <section class="bk-" id="contact">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12 text-center mb-4">
+                  <p class="custom-h3 mt-3">Contact</p>
+                  <h2>Book Your Makeup Session</h2>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="container mt-5 contact-container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="card-title">Contact Us for Availability and Pricing</h5>
+                <div class="card-body">
+                  
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Number">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="2" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn custom-btn mb-3">Send</button>
+                  </form>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+              <!-- <div class="card"> -->
+                <div class="card-body">
+                  <h5 class="card-title">Contact</h5>
+                  <p>info@hadassahmakeup.com</p>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Based In</h5>
+                  <p>Federal Capital Territory, Abuja</p>
+
+                  <div class="contact-icons">
+                    <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/yourtelegramusername" target="_blank" title="Telegram" class="social-icon"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              <!-- </div> -->
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="./images/contact-makeup.jpg" class="contact-img" alt="image 1">
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <footer class="container-fluid mt-5  text-light">
+        <div class="row">
+
+          <div class="col-md-4 text-center text-md-left">
+            <p class="mt-3">HADASSAH</p>
+          </div>
+      
+          <!-- Footer Links Div -->
+         <!-- Footer Links Div (display:flex) -->
+<div class="col-md-4 text-center">
+  <ul class="list-unstyled d-flex justify-content-center flex-wrap">
+    <li class="mx-3"><a href="#" class="d-block d-md-inline">Home</a></li>
+    <li class="mx-3"><a href="#" class="d-block d-md-inline">About</a></li>
+    <li class="mx-3"><a href="#" class="d-block d-md-inline">Services</a></li>
+    <li class="mx-3"><a href="#" class="d-block d-md-inline">Gallery</a></li>
+    <li class="mx-3"><a href="#" class="d-block d-md-inline">Testimonial</a></li>
+  </ul>
+</div>
+
+      
+          <!-- Contact and Social Icons Div -->
+          <div class="col-md-4 text-center">
+            <h5><a href="#contact" style="color: white; text-decoration: none; border-bottom: 1px solid white;">Contact Us</a></h5>
+            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <span class="mx-2"></span>
+              <a href="https://t.me/yourtelegramusername" target="_blank" title="Telegram" class="social-icon"><i class="fab fa-telegram"></i></a>
+
+          </div>
+
+        </div>
+      </footer>
+      
+      <div class="copyright text-center">
+        <h2>@2024 Hadassah Makeup | All Right Reserved</h2>
+        <p>Developed & Maintained by Panda</p>
+    </div>
+      
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
